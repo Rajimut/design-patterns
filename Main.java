@@ -11,6 +11,7 @@ public class Main {
     implementBuilderPattern();
     implementFactoryPattern();
     implementStrategyPattern();
+    implementAdaptorPattern();
   }
 
   public static void implementStrategyPattern() {
@@ -29,6 +30,12 @@ public class Main {
     System.out.println("\nImplementing factory pattern: ");
     DesignPattern designPattern = new DesignPattern();
     designPattern.implementFactoryPattern();
+  }
+
+  private static void implementAdaptorPattern() {
+    System.out.println("\nImplementing adaptor pattern: ");
+    DesignPattern designPattern = new DesignPattern();
+    designPattern.implementAdaptorPattern();
   }
 
 }

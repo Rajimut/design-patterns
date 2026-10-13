@@ -4,6 +4,7 @@ import designPatternPractice.builder.SampleBuilder;
 import designPatternPractice.factory.User;
 import designPatternPractice.factory.UserFactory;	
 import designPatternPractice.strategy.UserStrategy;
+import designPatternPractice.adaptor.AdaptorClient;
 
 
 public class DesignPattern {
@@ -148,6 +149,10 @@ public class DesignPattern {
 		// client - create weatherAdaptor = new WeatherAdaptor(new ThirdPartyAPI()); weatherAdaptor.getTempF();
 		// pros: decoupling
 		// cons: nothing really
+
+		AdaptorClient ac = new AdaptorClient();
+		ac.getTempFromApp();
+
 	}
 
 	public void implementFacadePattern() {
