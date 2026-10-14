@@ -5,6 +5,9 @@ import designPatternPractice.factory.User;
 import designPatternPractice.factory.UserFactory;	
 import designPatternPractice.strategy.UserStrategy;
 import designPatternPractice.adaptor.AdaptorClient;
+import designPatternPractice.proxy.VideoDownloaderProxy;
+import designPatternPractice.proxy.Video;
+
 
 
 public class DesignPattern {
@@ -98,6 +101,18 @@ public class DesignPattern {
 		// used for caching of data using HashMap
 		// used for preventing calls to banned sites etc
 		// should implement the same interface as the original class to disguise as the original class
+		VideoDownloaderProxy vdp = new VideoDownloaderProxy();
+		Video video = vdp.download("sun rise");
+		System.out.println(video.getName() + " is downloaded");
+		video = vdp.download("starts");
+		System.out.println(video.getName() + " is downloaded");
+
+		video = vdp.download("alphas");
+		System.out.println(video.getName() + " is downloaded");
+
+		video = vdp.download("starts");
+		System.out.println(video.getName() + " is downloaded");
+
 	}
 
 

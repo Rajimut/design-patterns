@@ -18,6 +18,7 @@ public class AdaptorClient {
 			System.out.println("its very cold");
 		}
 
+		// you can link any 3rd party api having the same interface WeatherAPI with our Weather App in the runtime (i.e at the client's side)
 		AnotherThirdPartyWeatherAPI thirdParty2 = new AnotherThirdPartyWeatherAPI();
 		WeatherAppImpl weatherApp2 = new WeatherAppImpl(thirdParty2);
 		double temp2 = weatherApp2.getTempF();

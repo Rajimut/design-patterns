@@ -12,6 +12,13 @@ public class Main {
     implementFactoryPattern();
     implementStrategyPattern();
     implementAdaptorPattern();
+    implementProxyPattern();
+  }
+
+  public static void implementProxyPattern() {
+    System.out.println("\nImplementing proxy pattern: ");
+    DesignPattern designPattern = new DesignPattern();
+    designPattern.implementProxyPattern();
   }
 
   public static void implementStrategyPattern() {
